@@ -1,0 +1,104 @@
+*:focus {
+    outline: 0 !important;
+    outline-offset: 0 !important;
+    background-image: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(87deg, #f64f59, #316ec3, #b3adb6);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 13s ease infinite;
+    -moz-animation: AnimationName 13s ease infinite;
+    -o-animation: AnimationName 13s ease infinite;
+    animation: AnimationName 13s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 93% 0%
+    }
+
+    50% {
+        background-position: 0% 100%
+    }
+
+    100% {
+        background-position: 93% 0%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 93% 0%
+    }
+
+    50% {
+        background-position: 0% 100%
+    }
+
+    100% {
+        background-position: 93% 0%
+    }
+}
+
+@-o-keyframes AnimationName {
+    0% {
+        background-position: 93% 0%
+    }
+
+    50% {
+        background-position: 0% 100%
+    }
+
+    100% {
+        background-position: 93% 0%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 93% 0%
+    }
+
+    50% {
+        background-position: 0% 100%
+    }
+
+    100% {
+        background-position: 93% 0%
+    }
+}
+
+
+
+.glass {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-radius: 30px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+*[tooltip]:focus:after {
+    content: attr(tooltip);
+    display:block;
+    position: absolute;    
+    background-color:#000;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 13px;
+    padding:10px;
+  }
