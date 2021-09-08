@@ -9,12 +9,11 @@ class Findkey extends Component
 {
 
     public function mount($key){
-        $check = urls::where('key' , $key)->first();
-        if($check){
-            return redirect($check->url);
-        }else{
+        $check = urls::where('key' , $key);
+        if(!$check->exists()) {
             return redirect("/");
         }
+        return redirect($check->first()->url);
     }
     public function render()
     {
