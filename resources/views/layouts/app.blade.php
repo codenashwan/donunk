@@ -45,7 +45,7 @@
                 <div class="container-fluid">
                     <a class="navbar-brand text-white"> Donunk</a>
                     <div class="d-flex align-items-center">
-                        <a href="https://www.paypal.com/paypalme/vianashwan" target="_blank"
+                        <a href="https://www.paypal.me/codenashwan" target="_blank"
                             class="text-decoration-none mx-2 text-white"><i class="bi bi-cup-straw"></i> Buy Me a
                             Coffee</a>
                     </div>
