@@ -17,16 +17,14 @@ class Welcome extends Component
     public function generate(){
         $key = Str::random(8);
         $this->validate();
-        $check = urls::where('url', $this->url)->first();
-        if($check){
-            $this->find = $check->key;
-        }else{
-        urls::create([
-            'url' => $this->url,
-            'key' => $key,
-        ]);
-        $this->find = $key;
-        }
+    
+        $url = urls::firstOrCreate(
+            ['url' => $this->url],
+            ['key' => $key],
+        );
+        
+         $this->find = $url->key;
+    
         $this->url = "";
     }
 
